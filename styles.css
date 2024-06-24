@@ -243,21 +243,6 @@ section{
     width: 100%;
 }  
 
-<<<<<<< HEAD
-.mision-section ul li{
-    list-style: none;
-}
-
-section ul{
-    list-style: none;
-}
-=======
-.mision-section ul{
-    list-style: none;
-}
-    
->>>>>>> 5db4029a33b4d98635eb350868ef6b0137f76b43
-
 section .parrafo-mision{
     display: flex;
     height: 200px;
