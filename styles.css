@@ -235,6 +235,11 @@ section{
     width: 100%;
 }  
 
+.mision-section ul{
+    list-style: none;
+}
+    
+
 section .parrafo-mision{
     display: flex;
     height: 200px;
