@@ -8,6 +8,14 @@ body{
     background-color: #EEA5A6;
 }
 
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
 /* Header------------------------------------------------------------------------------------------------------------------ */
 header{
     position: sticky;
@@ -234,6 +242,14 @@ section{
     display: block;
     width: 100%;
 }  
+
+.mision-section ul li{
+    list-style: none;
+}
+
+section ul{
+    list-style: none;
+}
 
 section .parrafo-mision{
     display: flex;
