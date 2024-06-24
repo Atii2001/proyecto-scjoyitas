@@ -9,6 +9,11 @@ body{
 }
 
 /* Header------------------------------------------------------------------------------------------------------------------ */
+header{
+    position: sticky;
+    top: 0px;
+}
+
 .contenedor-header{
     display: flex;
     flex-direction: row;
@@ -404,16 +409,26 @@ footer{
     header{
         width: 1044px;
         flex-wrap: nowrap;
+        position: static;
+    }
+
+    .contenedor-header .contenedor-btn {
+        width: 605px;
+    }
+
+    .barra-nav ul li img{
+        position: relative;
+        right: 15px;
     }
 
     article{
         width: 1044px;
-        height: 300px;
+        height: 310px;
         flex-wrap: nowrap;
     }
 
     .banner{
-        padding-top: 50px;
+        padding-top: 45px;
     }
 
     article .titulo-banner{
@@ -449,6 +464,10 @@ footer{
     footer{
         width: 1044px;
         flex-wrap: nowrap;
+    }
+
+    .text-copyright{
+        margin-bottom: 0px;
     }
 
 
