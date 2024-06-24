@@ -21,13 +21,13 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: #F1E5D1;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .barra-nav{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 1260px;
     justify-content: space-between;
 }
 
@@ -44,8 +44,8 @@ header{
     list-style: none;
     text-decoration: none;
     align-items: center;
-    height: 114px;
-    width: 610px;
+    /* height: 114px;
+    width: 610px; */
 }
 
 .contenedor-btn a{
@@ -89,7 +89,7 @@ header{
 
 .nav-barra{
     height: 40px;
-    width: 300px;
+    width: auto;
     border: 1px solid black;
     border-radius: 1rem;
     padding: 0px 10px 0px 20px;
@@ -111,11 +111,12 @@ article{
 
 .banner{
     display: flex;
+    height: auto;
 }
 
 .banner-izq{
     display: flex;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .banner-contenedor{
@@ -125,7 +126,6 @@ article{
 
 .banner-der{
     display: flex;
-    width: 50%;
 }
 
 .banner-izq, .banner-der{
@@ -177,6 +177,9 @@ article{
     justify-content: center;
 }
 
+h1{
+    display: flex;
+}
 
 /* Detalles del banner------------------------------------------------------------------------------------------------------- */
 article{
@@ -217,7 +220,7 @@ article{
 
 .img-banner{
     width: 660px;
-    height: auto;
+    height: 300px;
 }
 
 .banner-izq{
@@ -315,9 +318,8 @@ section{
 /* Footer-------------------------------------------------------------------------------------------------------------------- */
 
 footer{
-    display: block;
-    width: 100%;
-    
+    display: flexbox;
+    width: 100%;  
 }
 
 .contenedor-footer{
@@ -398,89 +400,277 @@ footer{
 /* Copyright---------------------------------------------------------------------------------------------------------------- */
 .text-copyright{
     margin-left: 20px;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    font-size: 13px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 12px;
 }
 
 /*@Media-------------------------------------------------------------------------------------------------------------------  */
-
-@media (max-width:767px){
-    body{
-        width: 100%;
-        height: auto;
-    }
-    
-    header{
-        width: 1044px;
+@media (max-width:320px){
+    header .contenedor-header{
+        width: 1200px;   
         flex-wrap: nowrap;
         position: static;
     }
 
-    .contenedor-header .contenedor-btn {
-        width: 605px;
-    }
-
-    .barra-nav ul li img{
+    .contenedor-btn img{
         position: relative;
-        right: 15px;
+        right: 20px;
     }
 
-    article{
-        width: 1044px;
-        height: 310px;
-        flex-wrap: nowrap;
+    .banner-article{
+        width: 1200px;
     }
 
-    .banner{
-        padding-top: 45px;
+    article .banner{
+        width: 1175px;
+        height: 300px;
     }
 
-    article .titulo-banner{
-        width: 522px;
-        font-size: 11px;
+    article .banner-izq{
+        width: 50%
     }
 
-    article .parrafo-banner{
-        width: 522px;
+    article .banner-der{
+        width: 50%;
     }
 
-    article .contenedor-btn-banner{
-        width: 522px;
+    article .banner-der .img-banner{
+        width: 600px;
+        height: 300px;
     }
 
-    .banner-izq{
-        width: 522px;
+    article .banner .banner-izq .banner-contenedor h1{
+      font-size: 18px;
     }
 
-    .banner-der{
-        width: 522px;
+    .mision-section{
+        width: 1200px;
     }
 
-    .banner-der img{
-        width: 522px;
+    .cards-section{
+        width: 1200px;
     }
 
-    section{
-        width: 1044px;
-        flex-wrap: nowrap;
+    .footer{
+        width: 1200px;
     }
-
-    footer{
-        width: 1044px;
-        flex-wrap: nowrap;
-    }
-
-    .text-copyright{
-        margin-bottom: 0px;
-    }
-
-
-
-
-
-
-
-
-
 }
+
+@media (max-width:480px){
+    header .contenedor-header{
+        width: 1200px;   
+        flex-wrap: nowrap;
+        position: static;
+    }
+
+    .contenedor-btn img{
+        position: relative;
+        right: 20px;
+    }
+
+    .banner-article{
+        width: 1200px;
+    }
+
+    article .banner{
+        width: 1175px;
+        height: 300px;
+    }
+
+    article .banner-izq{
+        width: 50%
+    }
+
+    article .banner-der{
+        width: 50%;
+    }
+
+    article .banner-der .img-banner{
+        width: 600px;
+        height: 300px;
+    }
+
+    article .banner .banner-izq .banner-contenedor h1{
+      font-size: 18px;
+    }
+
+    .mision-section{
+        width: 1200px;
+    }
+
+    .cards-section{
+        width: 1200px;
+    }
+
+    .footer{
+        width: 1200px;
+    }
+}
+
+@media (max-width:768px){
+    header .contenedor-header{
+        width: 1200px;   
+        flex-wrap: nowrap;
+        position: static;
+    }
+
+    .contenedor-btn img{
+        position: relative;
+        right: 20px;
+    }
+
+    .banner-article{
+        width: 1200px;
+    }
+
+    article .banner{
+        width: 1175px;
+        height: 300px;
+    }
+
+    article .banner-izq{
+        width: 50%
+    }
+
+    article .banner-der{
+        width: 50%;
+    }
+
+    article .banner-der .img-banner{
+        width: 600px;
+        height: 300px;
+    }
+
+    article .banner .banner-izq .banner-contenedor h1{
+      font-size: 18px;
+    }
+
+    .mision-section{
+        width: 1200px;
+    }
+
+    .cards-section{
+        width: 1200px;
+    }
+
+    .footer{
+        width: 1200px;
+    }
+}
+
+@media (max-width:1024px){
+    header .contenedor-header{
+        width: 1200px;   
+        flex-wrap: nowrap;
+        position: static;
+    }
+
+    .contenedor-btn img{
+        position: relative;
+        right: 20px;
+    }
+
+    .banner-article{
+        width: 1200px;
+    }
+
+    article .banner{
+        width: 1175px;
+        height: 300px;
+    }
+
+    article .banner-izq{
+        width: 50%
+    }
+
+    article .banner-der{
+        width: 50%;
+    }
+
+    article .banner-der .img-banner{
+        width: 600px;
+        height: 300px;
+    }
+
+    article .banner .banner-izq .banner-contenedor h1{
+      font-size: 18px;
+    }
+
+    .mision-section{
+        width: 1200px;
+    }
+
+    .cards-section{
+        width: 1200px;
+    }
+
+    .footer{
+        width: 1200px;
+    }
+}
+    
+@media (max-width:1200px){
+    header .contenedor-header{
+        width: 1200px;   
+        flex-wrap: nowrap;
+        position: static;
+    }
+
+    .contenedor-btn img{
+        position: relative;
+        right: 20px;
+    }
+
+    .banner-article{
+        width: 1200px;
+    }
+
+    article .banner{
+        width: 1175px;
+        height: 300px;
+    }
+
+    article .banner-izq{
+        width: 50%
+    }
+
+    article .banner-der{
+        width: 50%;
+    }
+
+    article .banner-der .img-banner{
+        width: 600px;
+        height: 300px;
+    }
+
+    article .banner .banner-izq .banner-contenedor h1{
+      font-size: 18px;
+    }
+
+    .mision-section{
+        width: 1200px;
+    }
+
+    .cards-section{
+        width: 1200px;
+    }
+
+    .footer{
+        width: 1200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
